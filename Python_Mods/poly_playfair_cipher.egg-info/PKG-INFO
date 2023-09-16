@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: poly-playfair-cipher
+Version: 0.1
+Summary: Playfair cipher
+Author: Shailesh
+Author-email: a69247199@gmail.com
+License: MIT
+License-File: License.txt
+
+Playfair cipher Implementation in python
