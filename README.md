@@ -1,8 +1,7 @@
-
 ```markdown
 # Poly Playfair Cipher
 
-Poly Playfair Cipher is a Python library that provides tools for encrypting and decrypting text using the Playfair Cipher with a customizable key matrix.
+Poly Playfair Cipher(Polyalphabetic Playfair cipher) is a Python library that provides tools for encrypting and decrypting text using the Playfair Cipher with a customizable key matrix.
 
 ## Installation
 
@@ -12,7 +11,7 @@ You can install Poly Playfair Cipher using pip:
 pip install poly-playfair-cipher
 ```
 
-## Usage
+## Example
 
 ### Encrypting Text
 
