@@ -12,39 +12,32 @@ pip install poly-playfair-cipher
 ```
 
 ## Example
-
+```python
+from PlayfairCipher import PlayfairCipher
+# Define a PlainText for the Playfair Cipher
+pt="Fluffy"
+# Define a key for the Playfair Cipher
+key="keyword"
+# Generate KeyMatrix 
+def genM(m):
+  for i in range(5):
+    for j in range(5):
+      print(m[i][j],end= " ")
+    print()
+# Creating a KeyMatrix :
+km=PlayfairCipher.matrix(key)
+# splitting plaintext into a pairs of two letters ie.(digraphs)
+p=PlayfairCipher.pairs(pt)
+# printing keymatrix :
+print("key matrix :")
+genM(km)
 ### Encrypting Text
-
-```python
-from poly_playfair_cipher import PlayfairCipher
-
-# Define a key for the Playfair Cipher
-key = "KEYWORD"
-
-# Initialize the PlayfairCipher with the key
-cipher = PlayfairCipher(key)
-
-# Encrypt a plaintext
-plaintext = "HELLO WORLD"
-ciphertext = cipher.encrypt(plaintext)
-print("Ciphertext:", ciphertext)
-```
-
+ct=PlayfairCipher.encryption(p,km)
+print("Cipher Txt :",ct)
 ### Decrypting Text
+pct=PlayfairCipher.decryption(ct,km)
+print("Plain Txt :",pct)
 
-```python
-from poly_playfair_cipher import PlayfairCipher
-
-# Define a key for the Playfair Cipher
-key = "KEYWORD"
-
-# Initialize the PlayfairCipher with the key
-cipher = PlayfairCipher(key)
-
-# Decrypt a ciphertext
-ciphertext = "ILIDGJZTJG"
-plaintext = cipher.decrypt(ciphertext)
-print("Decrypted Text:", plaintext)
 ```
 
 ## License
